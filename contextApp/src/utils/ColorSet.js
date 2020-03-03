@@ -1,6 +1,0 @@
-export const ColorSet = {
-  SULFUR_SPRING: "#D5D717",
-  LIVING_CORAL: "#fFF6F61",
-  CHIVE_BLOSSOM: "#7D5D99",
-  VIVACIOUS: "#A32857"
-};
