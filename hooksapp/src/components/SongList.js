@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import uuid from "react-uuid";
+import { NewSongForm } from "./NewSongForm";
 
 // import uuid from "uuid";
 // import uuidv1 from "uuid/v1";
@@ -13,8 +14,8 @@ export const SongList = () => {
     { title: "Whatever", id: 4 }
   ]);
 
-  const handleAddTitle = () => {
-    setSongs([...songs, { title: "new Dance", id: uuid() }]);
+  const handleAddTitle = title => {
+    setSongs([...songs, { title, id: uuid() }]);
   };
 
   return (
@@ -24,7 +25,7 @@ export const SongList = () => {
           <li>{song.title}</li>
         </ul>
       ))}
-      <button onClick={handleAddTitle}>+</button>
+      <NewSongForm handleAddTitle={handleAddTitle} />
     </div>
   );
 };

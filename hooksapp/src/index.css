@@ -5,4 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("https://media.giphy.com/media/gvKru3mU4wLFm/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  width: 80%;
+  margin: 50px auto;
+  padding: 10px 20px;
+  background: white;
 }
